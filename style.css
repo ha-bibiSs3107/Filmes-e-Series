@@ -108,3 +108,43 @@ main {
     justify-content: space-between;
     margin-top: 50px;
 }
+
+@media (max-width: 1000px) {
+    main {
+        width: 80vw;
+    }
+
+    .noticia-filme-serie {
+        width: 200px;
+    }
+
+    .noticia-filme-serie img {
+        width: 200px;
+    }
+    }
+
+@media (max-width: 850px) {
+    .container-noticias {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .noticia-principal img {
+        width: 100%;
+    }
+    .noticia-filme-serie img {
+        width: 100%;
+    }
+
+    .noticia-filme-serie {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+@media (max-width: 500px) {
+    main {
+        width: 75vw;
+    }
+    
+}
+}
