@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="pagina-filmes.css">
-    <title>Site de notícias</title>
+    <title>Filmes</title>
 </head>
-<body>
 
+<body>
    <header>
+    <div> <class class="header-mobile"></class>
         <h1>Filmes</h1>
+        <img src="icone-menu" src="./imagens/icone.svg" alt="Menu">
+        </div>
+        
+            <div class="menu-mobile" >
             <nav>
-                <a href="">Início</a>
+                <a href="index.html">Início</a>
                 <a href="pagina-filmes.html">Filmes</a>
                 <a href="">Séries</a>
                 <a href="">Lançamentos</a>
-                <a href="">Contato</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            </div>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="pagina-filmes.html">Filmes</a>
+                <a href="">Séries</a>
+                <a href="">Lançamentos</a>
+                <a href="contato.html">Contato</a>
             </nav>
     </header>
 
@@ -39,7 +53,7 @@
                 <h3>Meu Amigo Totoro</h3>
                 <p>Duas meninas se mudam para o interior do Japão para cuidar de sua mãe doente e fazem amizade com criaturas mágicas que habitam os arredores de seu novo lar.</p>
             </article>
-            
+        
         </section>
     </main>
 
@@ -47,5 +61,11 @@
         <p>&copy; 2025 Portal Filmes & Séries. Desenvolvido por Beatriz Santos</p>
     </footer>
     </body>
-
+<script>
+  const iconeMenu = document.querySelector('.icone-menu');
+  const menuAtivo = document.querySelector('.menu-mobile');
+  iconeMenu.addEventListener('click', () => {
+    menuAtivo.classList.toggle('menu-ativo');
+  });
+</script>
 </html>
