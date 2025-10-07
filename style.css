@@ -178,6 +178,7 @@ main {
     .noticia-filme-serie img {
         width: 100%;
     }
+}
 
 @media (max-width: 1000px) {
     main {
